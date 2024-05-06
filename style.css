@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  background-image: url("iStock-1208290498.jpg");
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  overflow-y: scroll;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+h1 {
+  color: #007bff;
+}
+.name {
+  align-self: center;
+  text-align: center;
+}
+.deets {
+  align-self: center;
+  text-align: center;
+}
+a {
+  color: #007bff;
+}
+a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+h2 {
+  color: #007bff;
+  margin-top: 20px;
+}
+p {
+  margin-bottom: 10px;
+}
+.section {
+  margin-top: 20px;
+}
+.span {
+  padding-right: 200px;
+}
+.project {
+  margin-top: 10px;
+}
+.project a {
+  color: #007bff;
+  text-decoration: none;
+}
+.project a:hover {
+  text-decoration: underline;
+  color: darkorange;
+}
