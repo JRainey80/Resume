@@ -1,0 +1,21 @@
+node_modules/
+
+# Environment settings
+.env
+
+# Build output
+dist/
+
+# Local Netlify folder
+.netlify/
+
+# Local configuration files
+config.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
