@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'https://resumeapiapp.azurewebsites.net/api/api_trig?code=mmMcNeqOz_dGPOmPyJxVqoRinVN5TcqaSx2oJbNufVsnAzFuoPFU-g%3D%3D';
+    const apiUrl = 'https://resumeapiapp.azurewebsites.net';
 
     fetch(apiUrl)
         .then(response => {
