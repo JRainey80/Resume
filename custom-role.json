@@ -1,0 +1,20 @@
+{
+  "Name": "CustomCosmosDBDataRole",
+  "Description": "Custom role to allow CosmosDB data access",
+  "Actions": [
+    "Microsoft.DocumentDB/databaseAccounts/read",
+    "Microsoft.DocumentDB/databaseAccounts/listKeys/action",
+    "Microsoft.DocumentDB/sqlDatabases/read",
+    "Microsoft.DocumentDB/sqlContainers/read",
+    "Microsoft.DocumentDB/sqlDocuments/read",
+    "Microsoft.DocumentDB/sqlDocuments/create",
+    "Microsoft.DocumentDB/sqlDocuments/delete",
+    "Microsoft.DocumentDB/sqlDocuments/replace",
+    "Microsoft.DocumentDB/sqlDocuments/query"
+  ],
+  "AssignableScopes": [
+    "/subscriptions/8ff76be0-453f-470b-a5d2-a270770fd732"
+  ]
+}
+
+
