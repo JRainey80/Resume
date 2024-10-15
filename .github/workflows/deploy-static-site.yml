@@ -41,7 +41,7 @@ jobs:
       - name: Run Cypress tests
         run: npx cypress run
         env:
-          CYPRESS_BASE_URL: "https://resue.rainey-cloud.com" 
+          CYPRESS_BASE_URL: "https://resume.rainey-cloud.com" 
 
   notify:
     runs-on: ubuntu-latest
