@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = 'https://api.rainey-cloud.com';
+    const apiUrl = 'https://api.rainey-cloud.com/api/api_trig';
 
     fetch(apiUrl)
         .then(response => {
