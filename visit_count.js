@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const apiUrl = 'https://resumeapiapp.azurewebsites.net/api/api_trig';
+    const apiUrl = 'https://api.rainey-cloud.com';
 
     fetch(apiUrl)
         .then(response => {
