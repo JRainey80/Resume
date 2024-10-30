@@ -1,74 +1,126 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   color: azure;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 80%;
+  margin: 0;
+  padding: 0;
   background-image: url("iStock-1208290498.jpg");
-  overflow: hidden;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
-  overflow-y: scroll;
+  background-attachment: fixed;
 }
+
 .container {
   background-color: rgba(0, 0, 0, 0.6);
-  max-width: 900px;
+  max-width: 90%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
 }
-.counter {
-  text-align: right;
-}
-.counter h1 {
-  font-size: 20px;
-}
-.counter p {
-  font-size: medium;
-}
-h1 {
-  color: #007bff;
-}
-.name {
-  align-self: center;
+
+h1, .name, .deets {
   text-align: center;
-}
-.deets {
-  align-self: center;
-  text-align: center;
-}
-a {
-  color: #007bff;
-}
-a:hover {
-  color: darkorange;
-  text-decoration: underline;
-}
-h2 {
-  color: #007bff;
-  margin-top: 20px;
-}
-p {
-  margin-bottom: 10px;
-}
-.section {
-  margin-top: 20px;
 }
 
-.span {
-  padding-right: 200px;
- 
+.deets a {
+  color: #007bff;
+  text-decoration: none;
 }
+
+.deets a:hover {
+  color: darkorange;
+}
+
+/* Project Section Styles */
 .project {
   margin-top: 10px;
 }
+
 .project a {
   color: #007bff;
   text-decoration: none;
 }
+
 .project a:hover {
-  text-decoration: underline;
   color: darkorange;
+  text-decoration: underline;
 }
+
+/* Section Styling */
+.section {
+  margin-top: 20px;
+}
+
+.section h2 {
+  color: #007bff;
+  margin-top: 20px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .project_item {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+  }
+
+  .project_image {
+    width: 80%; /* Reduce image width */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .project_story, .project_story_2 {
+    width: 100%; /* Make text full width */
+    font-size: 1em; /* Adjust font size */
+  }
+
+  .container {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p, ul {
+    font-size: 1em;
+  }
+
+  .counter {
+    text-align: center;
+  }
+
+  .deets {
+    font-size: 0.9em;
+  }
+}
+
+/* For very small screens (mobile devices) */
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  p, ul {
+    font-size: 0.9em;
+  }
+
+  .deets {
+    font-size: 0.8em;
+    padding: 0;
+  }
+
+  .project_image {
+    width: 100%;
+    max-width: 300px; /* Limit max width */
+  }
+
+  .project_story, .project_story_2 {
+    padding: 10px;
+  }
+}
+
