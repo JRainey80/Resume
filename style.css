@@ -57,52 +57,37 @@ h1, .name, .deets {
 }
 
 /* Responsive Layout */
-.project_item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.project_image {
-  width: 45%;
-  max-width: 450px;
-  height: auto;
-  border-radius: 10px;
-  margin: 0 auto;
-}
-
-.project_story, .project_story_2 {
-  color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 2px #000;
-  word-spacing: 2px;
-  letter-spacing: 1px;
-  font-family: "Mukta";
-  padding: 10px;
-  margin: 0;
-  width: 50%;
-  text-align: left;
-  font-size: 1.2em;
-}
-
-/* Adjustments for mobile screens */
 @media (max-width: 768px) {
   .project_item {
     flex-direction: column; /* Stack elements vertically */
+    text-align: center;
   }
 
-  .project_image, .project_story, .project_story_2 {
-    width: 100%; /* Full width on smaller screens */
+  .project_image {
+    width: 80%; /* Reduce image width */
+    margin: 0 auto; /* Center the image */
   }
 
   .project_story, .project_story_2 {
-    font-size: 1em; /* Slightly smaller font size for mobile */
-    padding: 10px;
+    width: 100%; /* Make text full width */
+    font-size: 1em; /* Adjust font size */
   }
 
   .container {
+    max-width: 95%;
     padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p, ul {
+    font-size: 1em;
+  }
+
+  .counter {
+    text-align: center;
   }
 
   .deets {
@@ -110,10 +95,9 @@ h1, .name, .deets {
   }
 }
 
-/* For very small screens (e.g., smartphones) */
+/* For very small screens (mobile devices) */
 @media (max-width: 480px) {
   .container {
-    max-width: 95%;
     padding: 5px;
   }
 
@@ -132,18 +116,11 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 300px; /* Limit max width on mobile */
-    margin: 0 auto; /* Center image */
+    max-width: 300px; /* Limit max width */
   }
 
   .project_story, .project_story_2 {
-    padding: 5px;
-    font-size: 0.9em;
-    text-align: center; /* Center text on very small screens */
-  }
-
-  .deets {
-    text-align: center;
-    word-break: break-word; /* Break long words to prevent overflow */
+    padding: 10px;
   }
 }
+
