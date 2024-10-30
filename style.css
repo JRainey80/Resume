@@ -12,15 +12,19 @@ body {
 
 .container {
   background-color: rgba(0, 0, 0, 0.6);
-  max-width: 60%;
+  max-width: 50%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
   overflow: hidden; 
 }
 
+.name {
+  color: #007bff;
+}
 h1, .name, .deets {
   text-align: center;
+  
 }
 
 .deets a {
@@ -57,7 +61,6 @@ h1, .name, .deets {
   margin-top: 20px;
 }
 
-/* Responsive Layout */
 @media (max-width: 768px) {
   .project_item {
     flex-direction: column; /* Stack elements vertically */
@@ -143,7 +146,7 @@ h1, .name, .deets {
   }
 
   body, html {
-    width: 70%;
+    width: 50%;
     overflow-x: hidden;
   }
 }
