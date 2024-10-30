@@ -23,7 +23,11 @@ body {
   text-align: right;
 }
 
-.counter h1 {
+.name {
+  color: #007bff;
+}
+
+.counter h2 {
   color: #007bff;
   text-align: right;
 }
