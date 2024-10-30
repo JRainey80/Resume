@@ -120,7 +120,7 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 250px; /* Further limit for very small screens */
+    max-width: 230px; /* Further limit for very small screens */
   }
 
   .project_story, .project_story_2 {
