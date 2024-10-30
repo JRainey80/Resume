@@ -29,7 +29,7 @@ body {
 .name {
   color: #007bff;
 }
-h1, .name, .deets {
+.container h1, .name, .deets {
   text-align: center;
   
 }
@@ -134,7 +134,7 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 80%; /* Further limit for very small screens */
+    max-width: 100%; /* Further limit for very small screens */
     display: block;
     margin: 0 auto;
   }
