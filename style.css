@@ -127,7 +127,7 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 200px; /* Further limit for very small screens */
+    max-width: 80%; /* Further limit for very small screens */
     display: block;
     margin: 0 auto;
   }
@@ -135,7 +135,7 @@ h1, .name, .deets {
   .project_story, .project_story_2 {
     padding: 10px;
     text-align: left; /* Align text left for better readability */
-    magin: 0;
+    margin: 0;
   }
 
   /* Ensure text does not overflow */
@@ -146,7 +146,7 @@ h1, .name, .deets {
   }
 
   body, html {
-    width: 50%;
+    width: 100%;
     overflow-x: hidden;
   }
 }
