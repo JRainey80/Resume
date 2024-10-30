@@ -19,18 +19,8 @@ body {
   overflow: hidden; 
 }
 
-.counter {
-  text-align: right;
-}
-.counter h2 {
-  text-align: right;
-  color: #007bff;
-
-.name {
-  color: #007bff;
-}
 h1, .name, .deets {
-  text-align: center;  
+  text-align: center;
 }
 
 .deets a {
