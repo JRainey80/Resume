@@ -12,7 +12,7 @@ body {
 
 .container {
   background-color: rgba(0, 0, 0, 0.6);
-  max-width: 50%;
+  max-width: 90%;
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
@@ -29,9 +29,8 @@ body {
 .name {
   color: #007bff;
 }
-.container h1, .name, .deets {
-  text-align: center;
-  
+h1, .name, .deets {
+  text-align: center;  
 }
 
 .deets a {
@@ -75,7 +74,7 @@ body {
   }
 
   .project_image {
-    width: 100%; /* Use full width on smaller screens */
+    width: 80%; /* Use full width on smaller screens */
     max-width: 300px; /* Limit maximum width */
     margin: 0 auto; /* Center the image */
   }
@@ -113,7 +112,7 @@ body {
 @media (max-width: 480px) {
   .container {
     padding: 5px;
-    with: 80%;
+    width: 80%;
     box-sizing: border-box;
     overflow-x: hidden;
   }
@@ -134,7 +133,7 @@ body {
 
   .project_image {
     width: 100%;
-    max-width: 100%; /* Further limit for very small screens */
+    max-width: 300px; /* Further limit for very small screens */
     display: block;
     margin: 0 auto;
   }
