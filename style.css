@@ -24,7 +24,8 @@ body {
 }
 
 .counter h1 {
-color: #007bff;
+  color: #007bff;
+  text-align: right;
 }
 
 h1, .name, .deets {
@@ -131,7 +132,7 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 330px; /* Further limit for very small screens */
+    max-width: 370px; /* Further limit for very small screens */
     display: block;
     margin: 0 auto;
   }
