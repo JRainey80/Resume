@@ -16,6 +16,7 @@ body {
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
+  overflow: hidden; /* Prevents content from overflowing */
 }
 
 h1, .name, .deets {
@@ -64,13 +65,16 @@ h1, .name, .deets {
   }
 
   .project_image {
-    width: 80%; /* Reduce image width */
+    width: 100%; /* Use full width on smaller screens */
+    max-width: 300px; /* Limit maximum width */
     margin: 0 auto; /* Center the image */
   }
 
   .project_story, .project_story_2 {
-    width: 100%; /* Make text full width */
+    width: 100%; /* Full width for text */
     font-size: 1em; /* Adjust font size */
+    text-align: center; /* Center-align text on smaller screens */
+    word-wrap: break-word; /* Prevents long words from overflowing */
   }
 
   .container {
@@ -116,11 +120,18 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 300px; /* Limit max width */
+    max-width: 250px; /* Further limit for very small screens */
   }
 
   .project_story, .project_story_2 {
     padding: 10px;
+    text-align: left; /* Align text left for better readability */
+  }
+
+  /* Ensure text does not overflow */
+  p, .deets, .project_story, .project_story_2 {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto; /* Add hyphenation for long words */
   }
 }
-
