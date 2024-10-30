@@ -28,6 +28,9 @@ body {
   text-align: right;
 }
 
+.counter p {
+  text-align: right;
+}
 h1, .name, .deets {
   text-align: center;
 }
@@ -74,7 +77,7 @@ h1, .name, .deets {
 
   .project_image {
     width: 80%; /* Use full width on smaller screens */
-    max-width: 300px; /* Limit maximum width */
+    max-width: 400px; /* Limit maximum width */
     margin: 0 auto; /* Center the image */
   }
 
@@ -132,7 +135,7 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 370px; /* Further limit for very small screens */
+    max-width: 400px; /* Further limit for very small screens */
     display: block;
     margin: 0 auto;
   }
