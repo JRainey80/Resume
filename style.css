@@ -103,6 +103,9 @@ h1, .name, .deets {
 @media (max-width: 480px) {
   .container {
     padding: 5px;
+    with: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -116,16 +119,20 @@ h1, .name, .deets {
   .deets {
     font-size: 0.8em;
     padding: 0;
+    margin: 0;
   }
 
   .project_image {
     width: 100%;
     max-width: 230px; /* Further limit for very small screens */
+    display: block;
+    margin: 0 auto;
   }
 
   .project_story, .project_story_2 {
     padding: 10px;
     text-align: left; /* Align text left for better readability */
+    magin: 0;
   }
 
   /* Ensure text does not overflow */
@@ -133,5 +140,10 @@ h1, .name, .deets {
     overflow-wrap: break-word;
     word-break: break-word;
     hyphens: auto; /* Add hyphenation for long words */
+  }
+
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
   }
 }
