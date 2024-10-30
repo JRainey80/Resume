@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   color: azure;
@@ -16,7 +16,7 @@ body {
   margin: 20px auto;
   padding: 20px;
   border-radius: 8px;
-  overflow: hidden; /* Prevents content from overflowing */
+  overflow: hidden; 
 }
 
 h1, .name, .deets {
@@ -103,7 +103,7 @@ h1, .name, .deets {
 @media (max-width: 480px) {
   .container {
     padding: 5px;
-    with: 100%;
+    with: 80%;
     box-sizing: border-box;
     overflow-x: hidden;
   }
@@ -124,7 +124,7 @@ h1, .name, .deets {
 
   .project_image {
     width: 100%;
-    max-width: 230px; /* Further limit for very small screens */
+    max-width: 200px; /* Further limit for very small screens */
     display: block;
     margin: 0 auto;
   }
@@ -143,7 +143,7 @@ h1, .name, .deets {
   }
 
   body, html {
-    width: 100%;
+    width: 70%;
     overflow-x: hidden;
   }
 }
