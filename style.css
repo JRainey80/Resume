@@ -19,6 +19,14 @@ body {
   overflow: hidden; 
 }
 
+.counter {
+  text-align: right;
+}
+
+.counter h1 {
+color: #007bff;
+}
+
 h1, .name, .deets {
   text-align: center;
 }
