@@ -73,6 +73,11 @@ h1, .name, .deets {
   margin-top: 20px;
 }
 
+.job {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 768px) {
   .project_item {
     flex-direction: column; /* Stack elements vertically */
