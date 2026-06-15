@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function () {
-    const apiUrl = 'https://resumeapiapp.azurewebsites.net/api/api_trig';
+    const apiUrl = 'https://api.rainey-cloud.com/api/api_trig';
     const cacheKey = 'visitorCount';
     const cacheExpiryKey = 'visitorCountExpiry';
     const rateLimitKey = 'lastApiCall';
