@@ -8,7 +8,7 @@
     <title>Justin Rainey - Resume</title>
 </head>
 <body>
-   
+
     <div class="container">
         <div class="counter">
             <h2>Thank you for visiting!</h2>
@@ -16,43 +16,92 @@
             <script src="visit_count.js"></script>
         </div>
         <h1 class="name">Justin Rainey</h1>
-        <p class="deets">Fort Jennings, OH 45844 | rainey.justin80@gmail.com | (614) 327 2524 | 
-            <a href="https://www.linkedin.com/in/justin-rainey-4347a97/" target="_blank">LinkedIn</a> | 
+        <p class="deets"><strong>Cloud Engineer</strong><br>
+            Fort Jennings, OH 45844 | rainey.justin80@gmail.com | (614) 327-2524 |
+            <a href="https://www.linkedin.com/in/justin-rainey-4347a97/" target="_blank">LinkedIn</a> |
             <a href="https://github.com/JRainey80" target="_blank">GitHub</a>
         </p>
-        <p class="summary">IT professional with experience in system integration, network administration, and cloud-based project deployment. Skilled in improving reliability, streamlining workflows, and contributing to infrastructure initiatives that enhance performance and scalability. Known for a proactive, analytical approach to solving technical challenges and for driving projects that deliver measurable results. Committed to continuous growth and cloud-focused engineering opportunities.</p>
+        <p class="summary">DevOps-focused Cloud Engineer with hands-on experience in Infrastructure as Code (Terraform), containerization (Docker, Kubernetes), CI/CD pipeline design (GitHub Actions), and Azure/AWS cloud deployment. Currently expanding a self-built 3-node virtualization cluster with VLAN-segmented networking, firewall/routing, and Kubernetes to develop production-grade infrastructure skills. Brings a strong troubleshooting foundation from 15+ years supporting mission-critical healthcare systems (EMR/PACS integrations, uptime-critical environments) alongside a Cloud Computing degree and active cloud certifications.</p>
 
         <div class="section">
             <h2>Technical Skills</h2>
             <ul>
-                <li>Troubleshooting, Document/Policy Creation, Project Management</li>
-                <li>Cloud Platforms: AWS, Azure</li>
-                <li>IaC: Terraform</li>
-                <li>OS: Windows/Server, Linux</li>
-                <li>Coding: Python, JavaScript, HTML/CSS, SQL</li>
-                <li>Tools: Kubernetes, Docker, Git</li>
-                <li>Data: Azure ETL(Data Factory, Synapse Studio, Azure Spark, Databricks, Stream Analytics)</li>
+                <li><strong>Cloud & IaC:</strong> Microsoft Azure, AWS, Terraform</li>
+                <li><strong>Containers & Orchestration:</strong> Docker, Kubernetes (k3s), Proxmox VE virtualization</li>
+                <li><strong>CI/CD & Version Control:</strong> GitHub Actions, Git, Cypress/Python test integration</li>
+                <li><strong>Networking & Systems:</strong> VLAN design & segmentation, OPNsense, managed switching, Linux, Windows Server, Active Directory/Office 365</li>
+                <li><strong>Programming:</strong> Python, SQL, HTML/CSS</li>
+                <li><strong>Process & Documentation:</strong> Technical writing, policy creation, project management, Lean Six Sigma</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Main Projects</h2>
+            <h2>Featured Project — Self-Directed Infrastructure Build (Kubecraft)</h2>
             <div class="project">
-                <p><a href="https://justin-rainey-portfolio.azurewebsites.net/" target="_blank">Portfolio Website</a></p>
+                <p><em>Ongoing</em></p>
                 <ul>
-                    <li>Engineered and deployed a comprehensive portfolio website leveraging the Python Flask framework, showcasing proficiency in HTML, CSS, and JavaScript. Implemented 
-                        containerization via Docker, followed by successful deployment to Azure Web Apps for hosting. Configured a CI/CD pipeline to update the Docker Registry and
-                        deploy to Azure. </li>
+                    <li>Architected and built a 3-node Proxmox VE cluster (repurposed HP ProDesk/EliteDesk hardware plus a custom-built MSI system) as a hands-on DevOps training platform, targeting a self-managed Kubernetes deployment.</li>
+                    <li>Designed and implemented a VLAN-segmented network architecture on a managed switch — separating management, Kubernetes, and WAN-handoff traffic — plus a dedicated isolated backend network for cluster communication.</li>
+                    <li>Installed and configured 2.5GbE NICs across all nodes and built VLAN-aware bridge configurations for a segmented, production-style network.</li>
+                    <li>Currently deploying OPNsense for routing/firewall services and building out a k3s Kubernetes cluster across the node cluster.</li>
                 </ul>
             </div>
+        </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <div class="section">
+                <p class="job"><span class="title">Jr. Network Administrator / Integration Specialist</span>
+                    <span class="dates">Aug 2025 - Present</span></p>
+                <p>Mercer Landmark</p>
+                <ul>
+                    <li>Mapped and diagrammed the complete network infrastructure across 23 company sites, producing documentation used for troubleshooting, planning, and onboarding.</li>
+                    <li>Designed and launched a company-wide security awareness training program using Microsoft AD, Entra ID, and KnowBe4, reducing phishing susceptibility from 5.1% to 3.8% and lowering the organization's overall security risk score from 42.0 to 33.4.</li>
+                    <li>Built a PowerShell-based monitoring and auto-remediation system, scheduled via Windows Task Scheduler, that detects failures on a business-critical order-relay server, alerts the IT team in real time, and automatically restarts the service to prevent downtime on the automated fertilizer production line.</li>
+                    <li>Diagnosed and resolved network link failures across sites, including cabling, wireless radio, switch, and router replacements.</li>
+                    <li>Authored technical documentation for recurring fixes and troubleshooting procedures to standardize resolution across the team.</li>
+                    <li>Provide systems and application support across Microsoft Active Directory, Office 365, iOS devices, and proprietary line-of-business applications.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <p class="job"><span class="title">Cloud Infrastructure Intern</span>
+                    <span class="dates">May 2023 - Aug 2023</span></p>
+                <p>Gainwell Technologies - Conway, AR</p>
+                <ul>
+                    <li>Deployed an AI application onto a Kubernetes cluster using Terraform-managed infrastructure.</li>
+                    <li>Built a GitHub Actions CI/CD pipeline to automatically build and push container images to AWS ECR.</li>
+                    <li>Installed a syslog receiver to centralize log collection for an application in active development.</li>
+                    <li>Collaborated with internal teams in Agile/Scrum ceremonies to identify and implement process improvements.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <p class="job"><span class="title">System Administrator (Volunteer)</span>
+                    <span class="dates">May 2024 - Sept 2025</span></p>
+                <p>Pet Cancer Foundation</p>
+                <ul>
+                    <li>Managed user account provisioning, password resets, and MFA configuration across Google Workspace for a fast-growing non-profit.</li>
+                    <li>Collaborated with a distributed team of IT professionals to support organizational systems.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Personal Projects</h2>
             <div class="project">
                 <p><a href="https://resume.rainey-cloud.com" target="_blank">Cloud Resume</a></p>
                 <ul>
-                    <li>Developed an html/css/javascript resume that is hosted in an azure storage blob</li>
-                    <li>Scripted a Python backend serverless API (Azure function app) that fetches/updates a CosmosDB Table and displays a visitor counter to the front end via Javascript</li>
-                    <li>Deployed CI/CD pipelines to front/backend Github repositories for updates, and custom domains for endpoints ensuring HTTPS</li>
-                    <li>Incorporated pipeline Cypress end to end tests for the front end and python unit testing/integration testing for backend API functionality</li>
-                    <li>Configured all resources with Terraform for scalable and versatile IaC deployment</li>
+                    <li>Built an HTML/CSS/JavaScript resume hosted on Azure Blob Storage with a Python-based Azure Function API (CosmosDB-backed visitor counter).</li>
+                    <li>Automated infrastructure deployment with Terraform; set up GitHub Actions CI/CD pipelines with custom domain and HTTPS for front and backend.</li>
+                    <li>Integrated Cypress (frontend) and Python (backend) automated testing into the CI/CD pipeline.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <p><a href="https://justin-rainey-portfolio.azurewebsites.net/" target="_blank">Portfolio Website</a></p>
+                <ul>
+                    <li>Developed a Flask-based portfolio site, containerized with Docker and deployed to Azure Web Apps.</li>
+                    <li>Configured a CI/CD pipeline to automatically build and deploy Docker images on GitHub push.</li>
                 </ul>
             </div>
         </div>
@@ -60,7 +109,7 @@
         <div class="section">
             <h2>Certifications</h2>
             <ul>
-                <li>Microsoft AZ 900 - Azure Fundamentals</li>
+                <li>Microsoft AZ-900 - Azure Fundamentals</li>
                 <li>DP-203 Azure Data Engineer Associate</li>
                 <li>CompTIA: A+, Network+, Security+</li>
                 <li>Lean Six Sigma, White Belt & Yellow Belt</li>
@@ -69,80 +118,28 @@
 
         <div class="section">
             <h2>Education</h2>
-            <p>Bachelor of Science - Cloud Computing and Solutions</p>
-            <p>Purdue University Global</p>
+            <p><strong>Bachelor of Science - Cloud Computing and Solutions</strong><br>Purdue University Global</p>
+            <p><strong>Associate of Applied Science - Radiography</strong><br>Columbus State Community College</p>
         </div>
 
         <div class="section">
-            <h2>Work Experience</h2>
+            <h2>Prior Experience</h2>
             <div class="section">
-            <p class="job"><span class="title">Jr. Network Administrator | Integration Specialist</span>
-                <span class="dates">Aug 2025 - Present</span></p>
-            <p>Mercer Landmark</p>
-            <ul>
-                <li>Installation, updating, break/fix, documentation of end user Microsoft/iOS devices and peripherals</li>
-                <li>Installation/configuration of network links, routers, switches</li>    
-                <li>Agriculture industry new/legacy application and hardware site integration</li>
-            </ul>
-        </div>
-            <p class="job"><span class="title">System Administrator(volunteer)</span>
-                <span class="dates">May 2024 - Aug 2025</span></p>
-            <p>Pet Cancer Foundation - USA/Canada</p>
-            <ul>
-                <li>Setting up new user accounts and configuring multifactor authentication (G-Suite)</li>
-                <li>Contributing to projects on a dynamic team of IT professionals at a fast-growing non-profit org</li>
-            </ul>
-        </div>
-        <div class="section">
-    
-            <p class="job"><span class="title">Cloud Infrastructure Intern </span>
-                <span class="dates">May 2023 - August 2023</span></p>
-            <p>Gainwell Technologies - Conway, AR</p>
-            <ul>
-                <li>Employed software engineering and development tools</li>
-                <li>Deployed an AI application onto a Kubernetes cluster via Terraform</li>
-                <li>Worked in agile/scrum methodologies.</li>
-                <li>Created a Github Actions pipeline to automatically push container images to AWS ECR</li>
-                <li>Installed a syslog receiver to collect logs for an application in development.</li>
-            </ul>
+                <p class="job"><span class="title">Medical Imaging Leadership & Technical Roles</span>
+                    <span class="dates">2008 - 2025</span></p>
+                <p>Adams Health Network | Van Wert Health | U.S. Dept. of Veterans Affairs | Mount Carmel Health | OhioHealth | The Ohio State University Wexner Medical Center</p>
+                <ul>
+                    <li>15+ years leading EMR, PACS, and teleradiology system integrations and upgrades in uptime-critical clinical environments; managed vendor contracts, SLAs, and regulatory compliance (Joint Commission, ACR, Medicare).</li>
+                </ul>
+            </div>
         </div>
 
         <div class="section">
-            <p class="job"><span class="title">Radiologic Technologist</span>
-                <span class="dates"></span>October 2021 - August 2025</span></p>
-            <p>Adams Health Network - Decatur, IN</p>
-            <ul>
-                <li>Performing patient clinical radiology exams supporting emergency and surgery departments</li>
-                <li>Troubleshooting PACS outages and workflows, teleradiology and EMR vendor (EPIC) outages</li>
-                <li>Working with radiologists, administrators, and technologists to streamline imaging protocols</li>
-            </ul>
+            <h2>Volunteer</h2>
+            <p class="job"><span class="title">Fireman</span></p>
+            <p>Fort Jennings Volunteer Fire Department</p>
         </div>
 
-        <div class="section">
-            <p class="job"><span class="title">Manager of Medical Imaging></span>
-                <span class="dates">April 2019 - August 2021</span></p>
-            <p>Van Wert Health - Van Wert, OH</p>
-            <ul>
-                <li>Managed 30 staff members between four sites operating 24/7/365</li>
-                <li>Negotiated contracts and service level agreements</li>
-                <li>Led EMR integration projects (vendor conversion/full PACS upgrade)</li>
-                <li>Achieved governance with regulatory groups, The Joint Commission, ODH, ACR</li>
-                <li>Created policy, procedure, and new processes by researching and implementing industry best practice</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <p class="job"><span title="title">Radiology Supervisor/Technologist</span>
-                <span class="dates">March 2016 - April 2019</span></p>
-            <p>Department of Veterans Affairs - Columbus, OH</p>
-            <ul>
-                <li>Troubleshot radiology information systems, network, and PACS</li>
-                <li>Researched and presented a technology solution that was adopted which eliminated 150+ per month additional trips into the facility
-                    for veteran patients
-                </li>
-            </ul>
-        </div>
     </div>
 </body>
 </html>
-               
